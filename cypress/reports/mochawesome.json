@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-10-21T19:42:00.120Z",
+    "end": "2025-10-21T19:42:05.642Z",
+    "duration": 5522,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b227d55a-4525-4b91-af81-f49fa1ebe948",
+      "title": "",
+      "fullFile": "cypress\\e2e\\assinatura.cy.js",
+      "file": "cypress\\e2e\\assinatura.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ef756ab4-a8e4-452f-8e3e-5fb083c29892",
+          "title": "Assinatura na página inicial",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verificar e realizar assinatura",
+              "fullTitle": "Assinatura na página inicial Verificar e realizar assinatura",
+              "timedOut": null,
+              "duration": 5457,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.single-widget').should('be.visible');\ncy.get('.single-widget h2').should('have.text', 'Subscription');\ncy.get('#susbscribe_email').type('qatestecase4@gmail.com');\ncy.get('#subscribe').click();\ncy.get('.alert-success').should('be.visible').and('contain.text', 'You have been successfully subscribed!');",
+              "err": {},
+              "uuid": "6e258324-2317-4739-ad7f-65d1b79d8a44",
+              "parentUUID": "ef756ab4-a8e4-452f-8e3e-5fb083c29892",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6e258324-2317-4739-ad7f-65d1b79d8a44"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5457,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}

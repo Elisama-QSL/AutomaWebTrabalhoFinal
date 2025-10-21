@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-10-21T19:43:41.021Z",
+    "end": "2025-10-21T19:43:56.195Z",
+    "duration": 15174,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "359f81f8-273b-4099-baca-637ab66a347a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\produtos.cy.js",
+      "file": "cypress\\e2e\\produtos.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2b22e29b-ba59-47fd-8b86-5e96edd3273d",
+          "title": "Verificação de Produtos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verificar detalhes de um produto",
+              "fullTitle": "Verificação de Produtos Verificar detalhes de um produto",
+              "timedOut": null,
+              "duration": 8042,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_ProdutosPage.default.acessarProdutos();\n_ProdutosPage.default.abrirProduto(1);\n_ProdutosPage.default.validarDetalhesProduto('Blue Top', 'Category: Women > Tops', 'Rs. 500', 1, 'New', 'Polo');",
+              "err": {},
+              "uuid": "568d9136-50d7-47e9-aea8-1ccd585e4b74",
+              "parentUUID": "2b22e29b-ba59-47fd-8b86-5e96edd3273d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Pesquisar produto",
+              "fullTitle": "Verificação de Produtos Pesquisar produto",
+              "timedOut": null,
+              "duration": 6917,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_ProdutosPage.default.acessarProdutos();\n_ProdutosPage.default.pesquisarProduto('Sleeveless Dress');\n_ProdutosPage.default.validarProdutoEncontrado('Rs. 1000');",
+              "err": {},
+              "uuid": "f89da504-b29a-4670-8d5c-7ccaf490cbc4",
+              "parentUUID": "2b22e29b-ba59-47fd-8b86-5e96edd3273d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "568d9136-50d7-47e9-aea8-1ccd585e4b74",
+            "f89da504-b29a-4670-8d5c-7ccaf490cbc4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14959,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}

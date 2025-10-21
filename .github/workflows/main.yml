@@ -19,7 +19,7 @@ jobs:
               run: npm install
 
             - name: Executando os teste
-              run: npx cypress run
+              run: npx cypress run --reporter mochawesome
 
             - uses: actions/upload-artifact@v4
               if: ${{!cancelled()}}
