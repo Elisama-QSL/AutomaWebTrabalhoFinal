@@ -1,0 +1,15 @@
+{
+  "nome": "qaTester",
+  "sobrenome": "Novo",
+  "empresa": "POS",
+  "endereco": "Novo Horizonte",
+  "pais": "Canada",
+  "estado": "Toronto",
+  "cidade": "Alaska",
+  "cep": "69874512",
+  "telefone": "+5587456213",
+  "senha": "teste123",
+  "dia": "15",
+  "mes": "May",
+  "ano": "1991"
+}
